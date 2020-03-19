@@ -1,7 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-import background from '../assets/images/backgroud.svg';
-
 export default createGlobalStyle`
   *{
     margin: 0;
@@ -11,7 +9,7 @@ export default createGlobalStyle`
   }
 
   body{
-    background: #191919 url(${background}) no-repeat center top;
+    background: #191919 url(${require('../assets/images/backgroud.svg')}) no-repeat center top;
     -webkit-font-smoothing: antialiased;
   }
 
